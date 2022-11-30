@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(8, 20, 70, 0.7), rgba(4,9,30,0.7)),url(Images/books.jpg);
+    background-position: right;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 2;
+    text-align: right;
+    
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px 15px;
+    font-size: 20px;
+}
+.nav-links ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: rgb(206, 26, 26);;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 25px;
+    color: rgb(206, 26, 26);
+}
+
+/*------ Search Bar ------ */
+.search-bar{
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    position: relative;
+    top:380px;
+    left: 590px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+.search-bar input{
+    background: transparent;
+    flex:1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: #cac7ff;
+}
+
+::placeholder{
+    color: #cccedd;
+}
+
+.search-bar button img{
+    width: 25px;
+}
+
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #cccedd;
+    cursor: pointer;
+}
+
+/*------ CourseLink ------ */
+
+.courselink{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{  
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 20px;
+    text-justify: auto;
+    text-align: center;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 31%;
+    background: #fce1e1;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa-brands{
+    color: #f44336;
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 15px 0;
+}
