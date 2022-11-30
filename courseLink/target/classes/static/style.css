@@ -20,7 +20,7 @@ nav{
 .nav-links{
     flex: 2;
     text-align: right;
-
+    
 }
 .nav-links ul li{
     list-style: none;
@@ -60,7 +60,7 @@ nav{
 .text-box p{
     margin: 10px 0 40px;
     font-size: 25px;
-    color: rgb(206, 26, 26);
+    color: rgb(255, 255, 255);
 }
 
 /*------ Search Bar ------ */
@@ -73,8 +73,8 @@ nav{
     border-radius: 60px;
     padding: 10px 20px;
     position: relative;
-    top:380px;
-    left: 590px;
+    top: 450px;
+    left: 585px;
     backdrop-filter: blur(4px) saturate(180%);
 }
 .search-bar input{
@@ -112,7 +112,7 @@ nav{
     text-align: center;
     padding-top: 100px;
 }
-h1{
+h1{  
     font-size: 36px;
     font-weight: 600;
 }
