@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <title>Create Account</title>
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <title>Create Account</title>
+  <style>
         *{
             margin: 0;
             padding: 0;
@@ -16,11 +16,11 @@
             text-align: center;
             color: black;
             background-image: linear-gradient(rgba(8, 20, 70, 0.7), rgba(4,9,30,0.7)), url(../static/Images/books.jpg);
-            
+
         }
 
         #body2{
-            background-color: #B0C4DE;     
+            background-color: #B0C4DE;
             border: 3px solid #4C516D;;
             border-radius: 10px;
         }
@@ -61,7 +61,7 @@
         .nav-links{
             flex: 2;
             text-align: right;
-            
+
         }
         .nav-links ul li{
             list-style: none;
@@ -89,46 +89,47 @@
     </style>
 </head>
 <body>
-    <section class="header">
-    <nav>
-        <div class="nav-links">
-            <ul>
-                <li><a href="main-page.html">Home</a></li>
-                <li><a href="">Sell</a></li>
-                <li><a href="">Contact Us</a></li>
-                <li><a href="sign-in.html">Log In</a></li>
-                <li><a href="sign-up.html">Create Account</a></li>
-                <li class="nav-item"><a href="library.html">Book Library</a></li>
-            </ul>
-        </div>
-    </nav>
-    </section>
+<section class="header">
+  <nav>
+    <div class="nav-links">
+      <ul>
+        <li class="nav-item"><a href="/home-page">Home</a></li>
+        <li><a href="">Sell</a></li>
+        <li><a href="">Contact Us</a></li>
+        <li class="nav-item"><a href="/sign-in">Log In</a></li>
+        <li class="nav-item"><a href="/library">Book Library</a></li>
+      </ul>
+    </div>
+  </nav>
+</section>
 
-    <div id="body2">
-    <h1>CourseLink</h1>
-    <h2>Create an Account to join our community!</h2>
+<div id="body2">
+  <h1>CourseLink</h1>
+  <h2>Create an Account to join our community!</h2>
 
-    <div id="form">
+
+  <div id="form">
     <form action="">
-        <label for="fname"> First Name: </label>
-        <input type="text" id="fname" name="fname"> 
-        <br>
-        <label for="lname"> Last Name: </label>
-        <input type="text" id="lname" name="lname">
-        <br>
-        <label for="email"> Email: </label>
-        <input type="email" id="email" name="email">
-        <br>
-        <label for="password"> Password: </label>
-        <input type="password" id="pass" name="password">
-        <br>
-        <label for="password"> Verify Password: </label>
-        <input type="password" id="v-pass" name="v-password">
-        <br>
-        
-        <input type="submit" id="submit-form" value="Sign-up">
+      <label for="fname"> First Name: </label>
+      <input type="text" id="fname" name="fname">
+      <br>
+      <label for="lname"> Last Name: </label>
+      <input type="text" id="lname" name="lname">
+      <br>
+      <label for="email"> Email: </label>
+      <input type="email" id="email" name="email">
+      <br>
+      <label for="password"> Password: </label>
+      <input type="password" id="pass" name="password">
+      <br>
+      <label for="password"> Verify Password: </label>
+      <input type="password" id="v-pass" name="v-password">
+
+      <br>
+
+      <input type="submit" id="submit-form" value="Sign-up">
     </form>
-    </div>
-    </div>
+  </div>
+</div>
 </body>
 </html>
